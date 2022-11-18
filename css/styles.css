@@ -35,7 +35,7 @@ main{
 /*! NAVBAR */
 
 .navbar{
-    flex: 0 0 15rem;
+    flex: 0 0 3rem;
     background-color: rgb(0, 0, 0);
 }
 
@@ -51,7 +51,7 @@ main{
     header{
         position: fixed;
         top: 0;
-        left: 15rem;
+        left: 3rem;
         right: 0;
         z-index: 1;
         height: 85px;
