@@ -26,6 +26,10 @@ body{
     color: white;
 }
 
+img{
+    max-width: 100%;
+}
+
 /*! MAIN */
 
 main{
@@ -37,6 +41,7 @@ main{
 .navbar{
     flex: 0 0 3rem;
     background-color: rgb(0, 0, 0);
+    padding: 0.5rem 0.5rem;
 }
 
 /*! PLAYLIST SECTION */
@@ -73,3 +78,20 @@ footer{
     height: 85px;
     background-color: var(--footer-bg)
 }
+
+
+/*! MEDIA QUERIES */
+
+    /*# Breakpoint 576 */
+
+    @media screen and (min-width: 577px) {
+
+        .navbar{
+            flex: 0 0 20rem;
+        }
+
+        header{
+            left: 20rem;
+        }
+        
+    }
