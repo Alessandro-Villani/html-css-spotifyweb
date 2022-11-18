@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- IMPORT FONTAWESOME -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css' integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==' crossorigin='anonymous'/>
     <!-- STYLESHEET -->
@@ -16,18 +20,47 @@
     <!--! MAIN CONTENT -->
     <main class="flex">
         <!--! NAVBAR -->
-        <nav class="navbar">
+        <nav class="navbar flex">
+            <div class="nav-top">
+                <ul class="mb-1">
+                    <li><a href="#"><img src="img/logo-small.svg" alt="Spotify-logo" class="desktop-hidden"><img src="img/logo.svg" alt="Spotify-big-logo" class="mobile-hidden"></a></li>
+                    <li><a href="#"><img src="img/home.svg" alt="Home" class="greyed-out"><span class="mobile-hidden">Home</span></a></li>
+                    <li><a href="#"><img src="img/search.svg" alt="Search" class="greyed-out"><span class="mobile-hidden">Cerca</span></a></li>
+                    <li><a href="#"><img src="img/libreria.svg" alt="Library" class="greyed-out"><span class="mobile-hidden">La tua libreria</span></a></li>
+                </ul>
 
+                <div class="nav-playlist mobile-hidden">
+                    <h3 class="mb-0-5">PLAYLIST</h3>
+                    <ul>
+                        <li><a href="#"><div class="btn">+</div> <span>Crea Playlist</span></a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <ul class="flex">
+                    <li><a href="#"><img src="img/download.svg" alt="Download" class="small-img"><span class="mobile-hidden">Installa app</span></a></li>
+                    <li><hr class="mobile-hidden d-block"></li>
+                    <li>
+                        <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded img-bg"><span class="mobile-hidden">John Doe</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!--! PLAYLIST SECTION -->
         <section id="playlist-section">
             <!--# PLAYLIST HEADER -->
             <header>
-
+   
             </header>
             <!--# PLAYLIST CONTENT -->
             <div class="content">
-
                 <!--+ PLAYLIST NAVBAR  -->
                 <nav class="row mb-3">
                     <ul class="flex">

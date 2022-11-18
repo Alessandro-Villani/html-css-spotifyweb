@@ -24,8 +24,28 @@
     text-align: center;
 }
 
+.mb-0-5{
+    margin-bottom: 0.5rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
 .mb-3 {
     margin-bottom: 3rem;
+}
+
+.rounded{
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: contain;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mobile-hidden{
+    display: none;
 }
 
 .debug{
@@ -36,10 +56,23 @@
 
 body{
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img{
-    max-width: 100%;
+    max-width: 1.875rem;
+}
+
+img.greyed-out{
+    filter: invert(0.5)
+}
+
+img.small-img{
+    width: 0.938rem;
+}
+
+img.img-bg{
+    background-color: gray;
 }
 
 ul{
@@ -68,16 +101,51 @@ a{
 /*! MAIN */
 
 main{
-    height: calc(100vh - 85px);
+    height: calc(100vh - 5rem);
 }
 
 /*! NAVBAR */
 
 .navbar{
+    font-size: 0.8rem;
+    font-weight: bold;
     flex: 0 0 3rem;
     background-color: rgb(0, 0, 0);
     padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.navbar h3{
+    font-size: 0.8rem;
+}
+
+.navbar span{
+    line-height: 30px;
+}
+
+.nav-top li{
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+}
+
+.nav-bottom ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.navbar .btn{
+    text-align: center;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--text-gray);
+}
+
 
 /*! PLAYLIST SECTION */
 
@@ -102,9 +170,9 @@ main{
     
     .content{
         padding: 6rem 1rem 1rem 1rem;
-        overflow-y: auto;
         height: 100%;
         background-color: var(--main-bg);
+        overflow-y: auto;
     }
 
     .content ul{
@@ -132,27 +200,69 @@ footer{
 
     @media screen and (min-width: 577px) {
 
+        /*+ GENERICS */
+
+        .mobile-hidden{
+            display: inline;
+        }
+
+        .mobile-hidden.d-block{
+            display: block;
+        }
+
+        .desktop-hidden{
+            display: none;
+        }
+
+        /*+ NAVBAR */
         .navbar{
             flex: 0 0 20rem;
+            padding: 1rem 1rem;
         }
+
+        .navbar a{
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+        }
+
+        .nav-top ul:first-child li:first-child{
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-top li:first-child img:last-of-type{
+            max-width: 50%;
+        }
+
+        .nav-bottom ul{
+          align-items: stretch;
+        }
+
+        /*+ HEADER */
 
         header{
             left: 20rem;
         }
-        
+                
     }
 
     /*# Breakpoint 768px */
 
     @media screen and (min-width: 769px) {
+
+        /*+ GENERICS */
+
         .flex > .col{
             flex: 0 0 25%;
         }
+
     }
 
     /*# Breakpoint 1200px */
 
     @media screen and (min-width: 1200px){
+        /*+ GENERICS */
+
         .flex > .col{
             flex: 0 0 calc(100%/6);
         }
