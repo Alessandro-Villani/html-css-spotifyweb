@@ -1,0 +1,65 @@
+/*! CSS RESET */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*! UTILS */
+
+.flex{
+    display: flex;
+}
+
+/*! GENERICS */
+
+body{
+    height: 100vh;
+}
+
+/*! MAIN */
+
+main{
+    height: 90%;
+    background-color: blue;
+}
+
+/*! NAVBAR */
+
+.navbar{
+    flex-basis: 20rem;
+    background-color: aqua;
+}
+
+/*! PLAYLIST SECTION */
+
+#playlist-section{
+    flex-basis: 100%;
+}
+
+    /*# PLAYLIST SECTION HEADER */
+
+    header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 85px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /*# CONTENT  */
+
+    .content{
+        overflow-y: auto;
+        height: calc(100% - 85px);
+        overflow-y: auto;
+    }
+
+/*! FOOTER */
+
+footer{
+    height: 10%;
+    background-color: gray;
+}
