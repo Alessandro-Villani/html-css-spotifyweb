@@ -20,6 +20,18 @@
     display: flex;
 }
 
+.centered-text{
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.debug{
+    border: 1px dashed white;
+}
+
 /*! GENERICS */
 
 body{
@@ -28,6 +40,29 @@ body{
 
 img{
     max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.row.flex{
+    flex-wrap: wrap;
+}
+
+.flex > .col{
+    flex: 0 0 50%;
+    padding: 0.5rem;
+}
+
+.card {
+    min-height: 8rem;
+    background-color: white;
 }
 
 /*! MAIN */
@@ -59,30 +94,41 @@ main{
         left: 3rem;
         right: 0;
         z-index: 1;
-        height: 85px;
+        height: 5rem;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
     /*# CONTENT  */
     
     .content{
-        padding-top: 100px;
+        padding: 6rem 1rem 1rem 1rem;
         overflow-y: auto;
         height: 100%;
         background-color: var(--main-bg);
     }
 
+    .content ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .content li{
+        padding: 0.5rem 1rem;
+    }
+
 /*! FOOTER */
 
 footer{
-    height: 85px;
+    height: 5rem;
     background-color: var(--footer-bg)
 }
 
 
 /*! MEDIA QUERIES */
 
-    /*# Breakpoint 576 */
+    /*# Breakpoint 576px */
 
     @media screen and (min-width: 577px) {
 
@@ -94,4 +140,20 @@ footer{
             left: 20rem;
         }
         
+    }
+
+    /*# Breakpoint 768px */
+
+    @media screen and (min-width: 769px) {
+        .flex > .col{
+            flex: 0 0 25%;
+        }
+    }
+
+    /*# Breakpoint 1200px */
+
+    @media screen and (min-width: 1200px){
+        .flex > .col{
+            flex: 0 0 calc(100%/6);
+        }
     }
