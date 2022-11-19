@@ -17,95 +17,99 @@
     <title>Spotify</title>
 </head>
 <body>
-    <!--! MAIN CONTENT -->
-    <main class="flex">
-        <!--! NAVBAR -->
-        <nav class="navbar flex">
-            <div class="nav-top">
-                <ul class="mb-1">
-                    <li><a href="#"><img src="img/logo-small.svg" alt="Spotify-logo" class="desktop-hidden"><img src="img/logo.svg" alt="Spotify-big-logo" class="mobile-hidden"></a></li>
-                    <li><a href="#"><img src="img/home.svg" alt="Home" class="greyed-out"><span class="mobile-hidden">Home</span></a></li>
-                    <li><a href="#"><img src="img/search.svg" alt="Search" class="greyed-out"><span class="mobile-hidden">Cerca</span></a></li>
-                    <li><a href="#"><img src="img/libreria.svg" alt="Library" class="greyed-out"><span class="mobile-hidden">La tua libreria</span></a></li>
-                </ul>
+    <div class="container flex">
+        <!--! MAIN CONTENT -->
+        <main class="flex">
+            <!--! NAVBAR -->
+            <nav class="navbar flex">
+                <div class="nav-top flex">
+                    <ul class="mb-1">
+                        <li><a href="#"><img src="img/logo-small.svg" alt="Spotify-logo" class="desktop-hidden"><img src="img/logo.svg" alt="Spotify-big-logo" class="mobile-hidden"></a></li>
+                        <li><a href="#"><img src="img/home.svg" alt="Home" class="greyed-out"><span class="mobile-hidden">Home</span></a></li>
+                        <li><a href="#"><img src="img/search.svg" alt="Search" class="greyed-out"><span class="mobile-hidden">Cerca</span></a></li>
+                        <li><a href="#"><img src="img/libreria.svg" alt="Library" class="greyed-out"><span class="mobile-hidden">La tua libreria</span></a></li>
+                    </ul>
 
-                <div class="nav-playlist mobile-hidden">
-                    <h3 class="mb-0-5">PLAYLIST</h3>
-                    <ul>
-                        <li><a href="#"><div class="btn">+</div> <span>Crea Playlist</span></a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
+                    <div class="nav-playlist mobile-hidden">
+                        <h3 class="mb-0-5">PLAYLIST</h3>
+                        <ul>
+                            <li><a href="#"><div class="btn">+</div> <span>Crea Playlist</span></a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    <ul class="flex">
+                        <li><a href="#"><img src="img/download.svg" alt="Download" class="small-img"><span class="mobile-hidden">Installa app</span></a></li>
+                        <li><hr class="mobile-hidden d-block"></li>
+                        <li>
+                            <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded img-bg"><span class="mobile-hidden">John Doe</span></a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="nav-bottom">
-                <ul class="flex">
-                    <li><a href="#"><img src="img/download.svg" alt="Download" class="small-img"><span class="mobile-hidden">Installa app</span></a></li>
-                    <li><hr class="mobile-hidden d-block"></li>
-                    <li>
-                        <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded img-bg"><span class="mobile-hidden">John Doe</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--! PLAYLIST SECTION -->
-        <section id="playlist-section">
-            <!--# PLAYLIST HEADER -->
-            <header>
-   
-            </header>
-            <!--# PLAYLIST CONTENT -->
-            <div class="content">
-                <!--+ PLAYLIST NAVBAR  -->
-                <nav class="row mb-3">
-                    <ul class="flex">
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </nav>
+            </nav>
+            <!--! PLAYLIST SECTION -->
+            <section id="playlist-section">
+                <div class="wrapper">
+                    <!--# PLAYLIST HEADER -->
+                    <header>
+    
+                    </header>
+                    <!--# PLAYLIST CONTENT -->
+                    <div class="content">
+                        <!--+ PLAYLIST NAVBAR  -->
+                        <nav class="row mb-3">
+                            <ul class="flex">
+                                <li><a href="#">in evidenza</a></li>
+                                <li><a href="#">podcast</a></li>
+                                <li><a href="#">classifiche</a></li>
+                                <li><a href="#">generi e mood</a></li>
+                                <li><a href="#">nuove uscite</a></li>
+                                <li><a href="#">scopri</a></li>
+                            </ul>
+                        </nav>
 
-                <!--+ RECENTLY PLAYED SECTION -->
-                <section id="recently-played" class="mb-3">
-                    <h2 class="mb-3">Recently Played</h2>
-                        <div class="row flex debug">
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                        </div>
-                </section>
-                <section id="suggested" class="mb-3">
-                    <h2 class="mb-3">Creato per John Doe</h2>
-                        <div class="row flex debug">
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                        </div>
-                </section>
-                <section id="popular" class="mb-3">
-                    <h2 class="mb-3">Artisti più popolari</h2>
-                        <div class="row flex debug">
-                            <div class="col debug"><div class="card"></div></div>
-                            <div class="col debug"><div class="card"></div></div>
-                        </div>
-                </section>
-            </div>
-        </section>
-    </main>
+                        <!--+ RECENTLY PLAYED SECTION -->
+                        <section id="recently-played" class="mb-3">
+                            <h2 class="mb-3">Recently Played</h2>
+                                <div class="row flex debug">
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                </div>
+                        </section>
+                        <section id="suggested" class="mb-3">
+                            <h2 class="mb-3">Creato per John Doe</h2>
+                                <div class="row flex debug">
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                </div>
+                        </section>
+                        <section id="popular" class="mb-3">
+                            <h2 class="mb-3">Artisti più popolari</h2>
+                                <div class="row flex debug">
+                                    <div class="col debug"><div class="card"></div></div>
+                                    <div class="col debug"><div class="card"></div></div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <!--! FOOTER  -->
-   <footer>
+        <!--! FOOTER  -->
+    <footer>
 
-   </footer>
+    </footer>
+    </div>
 </body>
 </html>
