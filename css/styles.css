@@ -13,6 +13,7 @@
     --footer-bg: rgb(40,40,40);
     --text-gray: rgb(125,127,132);
     --light-gray: rgb(180,180,180);
+    --lines: rgb(173,255,47);
 }
 
 /*! UTILS */
@@ -37,16 +38,19 @@
     margin-bottom: 3rem;
 }
 
-.txt-gray{
+.txt-lightgray{
     color: var(--light-gray);
 }
 
 .rounded{
-    width: 1.875rem;
-    height: 1.875rem;
     object-fit: contain;
     border-radius: 50%;
     display: inline-block;
+}
+
+.rounded.sm{
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .mobile-hidden{
@@ -100,11 +104,6 @@ a{
 .flex > .col{
     flex: 0 0 50%;
     padding: 0.5rem;
-}
-
-.card {
-    min-height: 8rem;
-    background-color: white;
 }
 
 /*! MAIN */
@@ -195,7 +194,7 @@ main{
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    /*# CONTENT  */
+    /*# PLAYLIST CONTENT  */
 
     .content{
         padding: 1rem;
@@ -213,6 +212,24 @@ main{
         padding: 0.5rem 1rem;
     }
 
+    .underline{
+        border-top: 2px solid var(--lines);
+        margin: 0.5rem auto;
+        width: 40%;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .content h4, .content h5{
+        color: var(--text-gray);
+    }
+
+    .content h3{
+        font-size: 0.8rem;
+    }
+
 /*! FOOTER */
 
 footer{
@@ -228,7 +245,7 @@ footer .btn-player{
     cursor: pointer;
 }
 
-footer .btn-player.txt-gray{
+footer .btn-player.txt-lightgray{
     color: var(--light-gray);
 }
 
@@ -248,7 +265,7 @@ footer i{
     height: 100%;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .song-info img{
@@ -394,6 +411,17 @@ footer i{
 
         .side-player.left .icons{
             flex-direction: row;
+        }
+
+    }
+
+    /*# Breakpoint 992 */
+    @media screen and (min-width: 993px){
+
+        /*+ PLAYLIST SECTION  */
+
+        .content h3{
+            font-size: 1rem;
         }
 
     }

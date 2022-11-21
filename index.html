@@ -48,7 +48,7 @@
                         <li><a href="#"><img src="img/download.svg" alt="Download" class="small-img"><span class="mobile-hidden">Installa app</span></a></li>
                         <li><hr class="mobile-hidden d-block"></li>
                         <li>
-                            <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded img-bg"><span class="mobile-hidden">John Doe</span></a>
+                            <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded sm img-bg"><span class="mobile-hidden">John Doe</span></a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                         <!--+ PLAYLIST NAVBAR  -->
                         <nav class="row mb-3">
                             <ul class="flex">
-                                <li><a href="#">in evidenza</a></li>
+                                <li><a href="#">in evidenza</a> <div class="underline"></div></li>
                                 <li><a href="#">podcast</a></li>
                                 <li><a href="#">classifiche</a></li>
                                 <li><a href="#">generi e mood</a></li>
@@ -77,27 +77,89 @@
                         <!--+ RECENTLY PLAYED SECTION -->
                         <section id="recently-played" class="mb-3">
                             <h2 class="mb-3">Recently Played</h2>
-                                <div class="row flex debug">
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
+                                <div class="row flex">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/metal_lifting.jpg" alt="Heavy Metal" class="mb-1">
+                                            <h3 class="mb-1">Heavy Metal</h3>
+                                            <h5>Subtitle</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/stranger.jpeg" alt="Stranger Things" class="mb-1">
+                                            <h3 class="mb-1">Stranger Things, Vol. 1 (a Netflis Original Series Soundtrack)</h3>
+                                            <h5>Kyle DIxon & Michael Stein</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/aquietplace.jpeg" alt="A Quiet Place" class="mb-1">
+                                            <h3 class="mb-1">A Quiet Place</h3>
+                                            <h5>Subtitle</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/split.jpeg" alt="Split" class="mb-1">
+                                            <h3 class="mb-1">Split</h3>
+                                            <h5>Subtitle</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/cure.jpeg" alt="A Cure for Wellness" class="mb-1">
+                                            <h3 class="mb-1">A Cure for Wellness</h3>
+                                            <h5>Subtitle</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/sinister.jpeg" alt="Sinister" class="mb-1">
+                                            <h3 class="mb-1">Sinister</h3>
+                                            <h5>Subtitle</h5>
+                                        </div>
+                                    </div>
                                 </div>
                         </section>
+
+                        <!--+ SUGGESTED SECTION -->
                         <section id="suggested" class="mb-3">
-                            <h2 class="mb-3">Creato per John Doe</h2>
-                                <div class="row flex debug">
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
+                            <h2 class="mb-1">Creato per John Doe</h2>
+                            <h4 class="mb-3">Più ascolti, più accurati saranno i suggerimenti.</h4>
+                                <div class="row flex">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/radar.jpeg" alt="Release Radar" class="mb-1">
+                                            <h3 class="mb-1">Release Radar</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/mixdaily.jpeg" alt="Daily Mix" class="mb-1">
+                                            <h3 class="mb-1">Daily Mix 1</h3>
+                                        </div>
+                                    </div>
                                 </div>
                         </section>
+                        
+                        <!--+ POPULAR SECTION  -->
                         <section id="popular" class="mb-3">
-                            <h2 class="mb-3">Artisti più popolari</h2>
-                                <div class="row flex debug">
-                                    <div class="col debug"><div class="card"></div></div>
-                                    <div class="col debug"><div class="card"></div></div>
+                            <h2 class="mb-1">Artisti più popolari</h2>
+                            <h4 class="mb-3">Più ascolti, più accurati saranno i suggerimenti.</h4>
+                                <div class="row flex">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/youg.jpeg" alt="Youg" class="rounded mb-1">
+                                            <h3 class="mb-1">Lana Del Rey</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="img/einaudi.jpeg" alt="Einaudi" class="rounded mb-1">
+                                            <h3 class="mb-1">Ludovico Einaudi</h3>
+                                        </div>
+                                    </div>
                                 </div>
                         </section>
                     </div>
@@ -112,12 +174,12 @@
             <img src="img/sinister.jpeg" alt="sinister">
             <ul>
                 <li><h3>Sinister</h3></li>
-                <li class="txt-gray">Brano Nome</li>
+                <li class="txt-lightgray">Brano Nome</li>
             </ul>
             </div>
             <div class="icons flex">
-                <button class="btn-player txt-gray"><i class="fa-regular fa-heart"></i></button>
-                <button class="btn-player txt-gray"><i class="fa-regular fa-folder"></i></button>
+                <button class="btn-player txt-lightgray"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn-player txt-lightgray"><i class="fa-regular fa-folder"></i></button>
             </div>
         </div>
         <div class="center-player flex">
