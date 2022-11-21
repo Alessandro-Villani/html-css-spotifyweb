@@ -118,6 +118,12 @@ main{
     padding: 0.5rem 0.5rem;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.navbar ul.flex{
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .navbar h3{
@@ -130,15 +136,17 @@ main{
 
 .nav-top{
     flex-direction: column;
+    min-height: 0;
+    overflow-y: hidden;
+}
+
+.nav-top > a {
+    line-height: 1.875rem;
 }
 
 .nav-top li{
     line-height: 1.875rem;
     margin-bottom: 0.5rem;
-}
-
-.nav-playlist{
-    overflow-y: auto;
 }
 
 .navbar .btn{
@@ -153,9 +161,7 @@ main{
 }
 
 .nav-bottom ul{
-    flex-direction: column;
     align-items: center;
-    gap: 0.3rem;
 }
 
 /*! PLAYLIST SECTION */
@@ -239,17 +245,26 @@ footer{
             align-items: center;
         }
 
-        .nav-top ul:first-child li:first-child{
-            margin-bottom: 1.5rem;
+        .nav-top{
+            min-height: 22rem;
         }
 
         .nav-top li:first-child img:last-of-type{
             max-width: 50%;
         }
 
+        .nav-playlist{
+            overflow-y: auto;
+        }
+
+        .nav-bottom{
+            padding-top: 0.5rem;
+        }
+
         .nav-bottom ul{
           align-items: stretch;
         }
+        
                
     }
 
@@ -275,6 +290,3 @@ footer{
         }
     }
 
-    .containerb{
-        padding: 1rem;
-    }
