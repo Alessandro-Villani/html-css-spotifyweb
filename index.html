@@ -30,7 +30,7 @@
                         <li><a href="#"><img src="img/libreria.svg" alt="Library" class="greyed-out"><span class="mobile-hidden">La tua libreria</span></a></li>
                     </ul>
                     <h3 class="mobile-hidden mb-0-5">PLAYLIST</h3>
-                    <a href="#" class="mb-1"><div class="btn">+</div> <span>Crea Playlist</span></a>
+                    <a href="#" class="mobile-hidden mb-1"><div class="btn-square">+</div> <span>Crea Playlist</span></a>
                     <div class="nav-playlist flex mobile-hidden d-block">
                         <ul>
                             <li><a href="#">Nome Playlist</a></li>
@@ -106,8 +106,44 @@
         </main>
 
         <!--! FOOTER  -->
-    <footer>
-
+    <footer class="flex">
+        <div class="side-player left flex">
+            <div class="song-info flex">
+            <img src="img/sinister.jpeg" alt="sinister">
+            <ul>
+                <li><h3>Sinister</h3></li>
+                <li class="txt-gray">Brano Nome</li>
+            </ul>
+            </div>
+            <div class="icons flex">
+                <button class="btn-player txt-gray"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn-player txt-gray"><i class="fa-regular fa-folder"></i></button>
+            </div>
+        </div>
+        <div class="center-player flex">
+            <div class="controls">
+                <button class="btn-player"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btn-player"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btn-player"><i class="fa-regular fa-circle-play fa-2x"></i></button>
+                <button class="btn-player"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="btn-player"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="progress-bar flex">
+                <div class="time">0:25</div>
+                <div class="bar">
+                    <div class="bar bar-progress"></div>
+                </div>
+                <div class="time">4:35</div>
+            </div>
+        </div>
+        <div class="side-player right flex">
+            <button class="btn-player"><i class="fa-solid fa-list"></i></button>
+            <button class="btn-player"><i class="fa-solid fa-display"></i></button>
+            <button class="btn-player"><i class="fa-solid fa-volume-high"></i></button>
+            <div class="bar volume-bar">
+                <div class="bar bar-progress"></div>
+            </div>
+        </div>
     </footer>
     </div>
 </body>
