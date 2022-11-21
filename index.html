@@ -25,7 +25,7 @@
                 <div class="nav-top flex">
                     <ul class="mb-1">
                         <li><a href="#"><img src="img/logo-small.svg" alt="Spotify-logo" class="desktop-hidden"><img src="img/logo.svg" alt="Spotify-big-logo" class="mobile-hidden"></a></li>
-                        <li><a href="#"><img src="img/home.svg" alt="Home" class="greyed-out"><span class="mobile-hidden">Home</span></a></li>
+                        <li class="selected"><a href="#"><img src="img/home.svg" alt="Home"><span class="mobile-hidden">Home</span></a></li>
                         <li><a href="#"><img src="img/search.svg" alt="Search" class="greyed-out"><span class="mobile-hidden">Cerca</span></a></li>
                         <li><a href="#"><img src="img/libreria.svg" alt="Library" class="greyed-out"><span class="mobile-hidden">La tua libreria</span></a></li>
                     </ul>
@@ -48,11 +48,12 @@
                         <li><a href="#"><img src="img/download.svg" alt="Download" class="small-img"><span class="mobile-hidden">Installa app</span></a></li>
                         <li><hr class="mobile-hidden d-block"></li>
                         <li>
-                            <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded sm img-bg"><span class="mobile-hidden">John Doe</span></a>
+                            <a href="#"><img src="img/profile.svg" alt="Profile" class="rounded sm img-bg"><address class="mobile-hidden">John Doe</address></a>
                         </li>
                     </ul>
                 </div>
             </nav>
+
             <!--! PLAYLIST SECTION -->
             <section id="playlist-section">
                 <div class="wrapper">
@@ -80,42 +81,72 @@
                                 <div class="row flex">
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/metal_lifting.jpg" alt="Heavy Metal" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Heavy Metal</h3>
                                             <h5>Subtitle</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/stranger.jpeg" alt="Stranger Things" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/stranger.jpeg" alt="Stranger Things">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Stranger Things, Vol. 1 (a Netflis Original Series Soundtrack)</h3>
                                             <h5>Kyle DIxon & Michael Stein</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/aquietplace.jpeg" alt="A Quiet Place" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/aquietplace.jpeg" alt="A Quiet Place" >
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">A Quiet Place</h3>
                                             <h5>Subtitle</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/split.jpeg" alt="Split" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/split.jpeg" alt="Split">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Split</h3>
                                             <h5>Subtitle</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/cure.jpeg" alt="A Cure for Wellness" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/cure.jpeg" alt="A Cure for Wellness">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">A Cure for Wellness</h3>
                                             <h5>Subtitle</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/sinister.jpeg" alt="Sinister" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/sinister.jpeg" alt="Sinister">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Sinister</h3>
                                             <h5>Subtitle</h5>
                                         </div>
@@ -130,13 +161,23 @@
                                 <div class="row flex">
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/radar.jpeg" alt="Release Radar" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/radar.jpeg" alt="Release Radar">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Release Radar</h3>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/mixdaily.jpeg" alt="Daily Mix" class="mb-1">
+                                            <figure class="mb-1">
+                                                <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Daily Mix 1</h3>
                                         </div>
                                     </div>
@@ -150,14 +191,25 @@
                                 <div class="row flex">
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/youg.jpeg" alt="Youg" class="rounded mb-1">
+                                            <figure class="rounded mb-1">
+                                                <img src="img/youg.jpeg" alt="Youg" class="rounded">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Lana Del Rey</h3>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card">
-                                            <img src="img/einaudi.jpeg" alt="Einaudi" class="rounded mb-1">
+                                            <figure class="rounded mb-1">
+                                                <img src="img/einaudi.jpeg" alt="Einaudi" class="rounded">
+                                                <div class="overlay flex">
+                                                    <i class="fa-regular fa-circle-play fa-7x"></i>
+                                                </div>
+                                            </figure>
                                             <h3 class="mb-1">Ludovico Einaudi</h3>
+
                                         </div>
                                     </div>
                                 </div>
