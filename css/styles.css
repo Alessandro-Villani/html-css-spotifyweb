@@ -192,6 +192,17 @@ main{
         top: 0;
         height: 5rem;
         background-color: rgba(0, 0, 0, 0.5);
+        padding: 1.5rem;
+        text-align: end;
+    }
+
+    header .call-to-action{
+        display: inline-block;
+        color: white;
+        border: 1px solid white;
+        padding: 0.5rem 2rem;
+        border-radius: 1.5rem;
+        font-size: 0.8rem;
     }
 
     /*# PLAYLIST CONTENT  */
