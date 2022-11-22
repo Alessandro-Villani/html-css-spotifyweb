@@ -80,6 +80,7 @@ figure{
     position: relative;
     display: inline-block;
     cursor: pointer;
+    transition: transform 0.5s;
 }
 
 figure.rounded{
@@ -244,6 +245,7 @@ main{
         padding: 0.5rem 2rem;
         border-radius: 1.5rem;
         font-size: 0.8rem;
+        transition: transform 0.3s;
     }
 
     /*# PLAYLIST CONTENT  */
@@ -406,12 +408,24 @@ footer i{
 
 /*! HOVER EFFECTS */
 
+nav a{
+    transition: color 0.3s;
+}
+
 nav a:hover{
     color: white;
 }
 
+nav a .btn-square{
+    transition: background-color 0.3s;
+}
+
 nav a:hover .btn-square{
     background-color: white;
+}
+
+nav a img{
+    transition: filter 0.3s;
 }
 
 nav a:hover img{
@@ -426,6 +440,10 @@ header .call-to-action:hover{
     transform: scale(1.2);
 }
 
+.content figure:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+
 .content figure:hover .overlay{
     display: flex;
 }
@@ -436,8 +454,16 @@ header .call-to-action:hover{
     cursor: pointer;
 }
 
+.side-player.left button i{
+    transition: color 0.3s;
+}
+
 .side-player.left button i:hover{
     color: white;
+}
+
+.center-player .fa-circle-play{
+    transition: transform 0.3s;
 }
 
 .center-player .fa-circle-play:hover{
@@ -446,19 +472,38 @@ header .call-to-action:hover{
 
 .bar:hover .bar-progress{
     background-color: var(--lines);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: relative;
 }
 
 .bar:hover .bar-progress::after{
     content: '';
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -25%);
     width: 0.8rem;
     height: 0.8rem;
     background-color: white;
     border-radius: 50%;
 
+}
+
+.bar.volume-bar:hover .bar-progress::after{
+    top: 100%;
+    transform: translate(25%, -50%);
+}
+
+/*! SCROLLBAR - WEBKIT ONLY */
+
+::-webkit-scrollbar{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button{
+    background-color: var(--footer-bg);
+    border: 2px solid black;
+    border-radius: 5px; 
 }
 
 /*! MEDIA QUERIES */
@@ -496,6 +541,12 @@ header .call-to-action:hover{
         .bar.volume-bar .bar.bar-progress{
             width: 20%;
             height: 0.3rem;
+        }
+
+        /*+ HOVER EFFECTS  */
+
+        .bar.volume-bar:hover .bar-progress::after{
+            transform: translate(50%, -60%);
         }
     }
     
